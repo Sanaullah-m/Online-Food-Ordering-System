@@ -1,0 +1,115 @@
+:root {
+
+    /**
+     * colors 
+     */
+
+    --red-orange-crayola: hsl(0, 100%, 66%);
+    --space-cadet: hsl(249, 37%, 19%);
+    --pistachio: hsl(88, 50%, 60%);
+    --cultured: hsl(220, 13%, 95%);
+    --saffron: hsl(45, 91%, 58%);
+    --rhythm: hsl(240, 9%, 51%);
+    --white: hsl(0, 0%, 100%);
+
+    /**
+     * typography 
+     */
+
+    --fs-1: 46px;
+    --fs-2: 28px;
+    --fs-3: 18px;
+    --fs-4: 15px;
+    --fs-5: 14px;
+
+    /**
+     * spacing 
+     */
+
+    --px: 30px;
+    --py: 60px;
+
+    /**
+     * others 
+     */
+
+    --default-transition: 0.75s ease;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.registratoin-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.text-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 10px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.input-box input:focus {
+    border-color: var(--saffron);
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #ccc;
+    transition: background-color 0.3s;
+}
+
+.input-box input:focus+.underline {
+    background-color: var(--saffron);
+}
+
+.confirm-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--saffron);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
